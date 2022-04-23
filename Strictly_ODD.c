@@ -1,23 +1,29 @@
 #include<stdio.h>
 int main()
 {
-    int i,n;
-    scanf("%d",&n);
-    int arr[n];
-    for(i=0;i<n;i++)
+    int s,i,arr[s];
+    scanf("%d",&s);
+    for(i=0;i<s;i++)
     {
         scanf("%d",&arr[i]);
     }
-    for(i=0;i<n;i++)
+    int count=0;
+    for(i=0;i<s;i++)
     {
         if(arr[i]%2!=0)
         {
             if(i%2==0)
             {
-                printf("False");
-                return 0;
+                count++;
             }
         }
     }
-    printf("True");
+    if(count==0)
+    {
+        printf("True");
+    }
+    else
+    {
+        printf("False");
+    }
 }
