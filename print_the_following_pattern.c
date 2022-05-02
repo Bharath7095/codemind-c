@@ -1,15 +1,14 @@
 #include<stdio.h>
-int main(){
-	int i,j,n;
-	scanf("%d",&n);
-	for(i=1;i<=n;i++){
-		for(j=1;j<=n;j++){
-			if(j==i){
-				printf("0");
-			}
-			else{
-				printf("x");
-			}
+#include<stdlib.h>
+int main()
+{
+	int i,j,r;
+	scanf("%d",&r);
+	for(i=r-1;i>=0;i--)
+	{
+		for(j=i;j>=0;j--)
+		{
+			printf("%c ",'A'+i);
 		}
 		printf("
 ");
