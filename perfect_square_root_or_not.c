@@ -2,13 +2,13 @@
 #include<math.h>
 int main()
 {
-    int num;
-    int ival;
-    float fval;
-    scanf("%d",&num);
-    ival=sqrt(num);
-    fval=sqrt(num);
-    if(ival==fval)
+    int n;
+    scanf("%d",&n);
+    float f;
+    int a;
+    f=sqrt(n);
+    a=f;
+    if(a==f)
     {
         printf("True");
     }
