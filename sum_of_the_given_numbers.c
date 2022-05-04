@@ -1,25 +1,13 @@
 #include<stdio.h>
 int main()
 {
-    int s,j,sum;
-    scanf("%d",&s);
-    int a=2;
-    int arr[s][a],i;
-    for(i=0;i<s;i++)
+    int n;
+    scanf("%d",&n);
+    int i,a,b;
+    for(i=0;i<n;i++)
     {
-        for(j=0;j<a;j++)
-        {
-            scanf("%d",&arr[i][j]);
-        }
-    }
-    for(i=0;i<s;i++)
-    {
-        sum=0;
-        for(j=0;j<a;j++)
-        {
-            sum=sum+arr[i][j];
-        }
+        scanf("%d%d",&a,&b);
         printf("%d
-",sum);
+",a+b);
     }
 }
